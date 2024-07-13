@@ -10,6 +10,13 @@ export function getTagLinkParams(data: EntityTag): { type: 'external' | 'interna
     };
   }
 
+  if (data.meta?.idrissHandle) {
+    return {
+      type: 'external',
+      href: `https://www.x.com/${ data.meta.idrissHandle }`,
+    };
+  }
+
   if (data.meta?.tagUrl) {
     return {
       type: 'external',

@@ -27,6 +27,7 @@ export default function parseMetaPayload(meta: AddressMetadataTag['meta']): Addr
       'appLogoURL',
       'appActionButtonText',
       'warpcastHandle',
+      'idrissHandle',
     ];
 
     for (const stringField of stringFields) {

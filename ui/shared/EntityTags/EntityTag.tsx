@@ -31,6 +31,10 @@ const EntityTag = ({ data, isLoading, maxW }: Props) => {
       return `@${ data.meta.warpcastHandle }`;
     }
 
+    if (data.meta?.idrissHandle) {
+      return `@${ data.meta.idrissHandle }`;
+    }
+
     return data.name;
   })();
 

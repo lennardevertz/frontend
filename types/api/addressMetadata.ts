@@ -32,6 +32,7 @@ export interface AddressMetadataTagApi extends Omit<AddressMetadataTag, 'meta'> 
     appLogoURL?: string;
     appActionButtonText?: string;
     warpcastHandle?: string;
+    idrissHandle?: string;
   } | null;
 }
 
